@@ -1,0 +1,13 @@
+Node js :10 version
+http://nodejs.org
+----------------
+angular cli :
+6 version  
+npm install -g @angular/cli@6
+---------------------
+npm : 
+npm i npm
+
+---------
+Running project:
+Go to project folder in command prompt and run ng serve --open

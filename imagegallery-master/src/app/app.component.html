@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div>
+    <h2 class="title">Image Gallery</h2>
+    <input class="search" type="text" [(ngModel)]="userFilter.title" placeholder="Search By Title">
+  </div>
+
+  <div class="table">
+    <table class="table-responsive">
+      <tbody>
+        <div class="row">
+          <div class="col-lg-3" *ngFor="let item of (imageData  | filterBy: userFilter) | paginate: { itemsPerPage: 12, currentPage: p }">
+            <div class="thumbnail col-md-6 col-sm-3 col-lg-12 col-xl-12" >
+              <td><img class="img-responsive img-thumbnail" src="{{item.thumbnailUrl}}" /></td>
+              <p class="caption">{{item.title}}</p>
+            </div>
+          </div>
+        </div>
+      </tbody>
+    </table>
+  </div>
+  <div class="pagination">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.caption {
+    word-wrap: break-word;
+}
+.search {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border:solid 1px #ccc;
+}
+.title {
+    color: rebeccapurple;
+    text-align: center;
+}
